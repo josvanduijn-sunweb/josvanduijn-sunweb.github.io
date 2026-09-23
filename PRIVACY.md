@@ -6,4 +6,4 @@ My Stuff Counter does not collect, store, or share any personal data. The counte
 
 If you delete the app, all of its data is removed from your device.
 
-Questions? Contact jos.van.duyn@gmail.com.
+Questions? Contact mystuffcounter.support@gmail.com.
