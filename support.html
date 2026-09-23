@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MY Stuff Counter — Support</title>
+<style>
+  :root {
+    --bg: #FFF8F0;
+    --card-bg: #FFFFFF;
+    --text: #2A1E14;
+    --text-muted: #6B5D4F;
+    --accent-start: #FD4600;
+    --accent-end: #FDB901;
+    --border: #F0E4D6;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17130F;
+      --card-bg: #221C15;
+      --text: #F5EDE3;
+      --text-muted: #B8A996;
+      --border: #33291E;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17130F;
+    --card-bg: #221C15;
+    --text: #F5EDE3;
+    --text-muted: #B8A996;
+    --border: #33291E;
+  }
+  html {
+    scroll-padding-top: env(safe-area-inset-top, 0px);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(253, 70, 0, 0.25);
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 4px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+  }
+  section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 17px;
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  p {
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--text-muted); font-size: 14px; }
+  a {
+    color: var(--accent-start);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  a:hover { text-decoration: underline; }
+  .faq-item { margin-bottom: 18px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-q {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .faq-a {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+  .btn-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  .btn:hover { text-decoration: none; opacity: 0.9; }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 40px;
+  }
+  code {
+    background: var(--border);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="icon">+/−</div>
+    <div>
+      <h1>MY Stuff Counter</h1>
+      <p class="subtitle">Support &amp; Help Center</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>👋 Welcome</h2>
+    <p>
+      Need help with MY Stuff Counter? You're in the right place. Below you'll find answers
+      to common questions. If you can't find what you're looking for, reach out — we're
+      happy to help.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="mailto:support@yourdomain.com">Email Support</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I create a new counter?</div>
+      <div class="faq-a">Tap the add button on the main list screen, give your item a name, and it'll appear in your list ready to count.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I increase or decrease a count?</div>
+      <div class="faq-a">Open any item from your list and use the + and − buttons to adjust its count. Changes are saved automatically.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can I rename or delete a counter?</div>
+      <div class="faq-a">Yes — swipe on an item in your list, or open it and use the edit options, to rename, reset, or delete it.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is my data backed up?</div>
+      <div class="faq-a">Your counters are stored on your device. [Add details here if you support iCloud sync or backups.]</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Does the app work offline?</div>
+      <div class="faq-a">Yes, MY Stuff Counter works fully offline — no account or internet connection required.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">I found a bug or have a feature request — what do I do?</div>
+      <div class="faq-a">Email us at the address below with as much detail as possible (what you were doing, what happened, and your device/iOS version) and we'll take a look.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>📧 Contact</h2>
+    <p>Still stuck? Send us a message and we'll get back to you as soon as we can.</p>
+    <p><a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+    <p class="muted">We typically reply within 1–2 business days.</p>
+  </section>
+
+  <footer>
+    © 2026 MY Stuff Counter. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
